@@ -12,7 +12,7 @@ LOGIN = "[ ]-CPF para entrar na conta: "
 banco = {"usuarios": dict()}
 
 
-def deposito(extrato):
+def deposito(extrato, /):
     value = int(input("Digite o valor a ser depositado: "))
     if value > 0:
         extrato["saldo"] += value
